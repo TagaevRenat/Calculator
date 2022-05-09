@@ -4,13 +4,11 @@
 
 body {
     margin: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    display: grid;
 }
 
 .result {
+    display: grid;
     grid-column: auto;
     color: white;
     font-size: 40px;
@@ -19,6 +17,7 @@ body {
 }
 
 .memory {
+    display: grid;
     grid-column: auto;
     color: white;
     font-size: 30px;
@@ -29,14 +28,14 @@ body {
 }
 
 .countainer {
+    display: grid;
+    min-height: 100vh;
     width: 100%;
-    height: auto;
     border: solid;
     background-color: black;
-    border-radius: 15px;
     padding: 20px;
     padding-bottom: 32px;
-
+    grid-template-rows: repeat(1, 1fr);
 }
 
 .buttons {
@@ -45,6 +44,9 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 80px;
     gap: 2%;
+    height: 100%;
+    width: 100%;
+    vertical-align: bottom;
 }
 
 .grey {
